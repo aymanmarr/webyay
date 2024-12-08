@@ -15,7 +15,7 @@ export const Footer = () => {
               {/* Replace Plane icon with logo */}
               <img src={Logo} alt="SkyWings Logo" className="h-8 w-8 object-contain" />
 
-              <span className="text-xl font-bold">SkyWings</span>
+              <span className="text-xl font-bold">Royal Air Maroc</span>
             </div>
             <p className="text-text-muted">Your journey begins with us. Experience the sky like never before.</p>
           </div>

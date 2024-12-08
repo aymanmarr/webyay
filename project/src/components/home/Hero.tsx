@@ -26,7 +26,7 @@ export const Hero = () => {
             className="text-center mb-8"
           >
               <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Explore the World with{' '}
+              Unique experience with{' '}
               <span className="text-red-500">Royal Air Maroc</span>
             </h1>
 
