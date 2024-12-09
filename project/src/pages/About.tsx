@@ -11,7 +11,7 @@ export const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold mb-4">About SkyWings Airlines</h1>
+          <h1 className="text-4xl font-bold mb-4">About Royal Air Maroc</h1>
           <p className="text-text-muted max-w-2xl mx-auto">
             Your trusted partner in air travel, connecting people and places since 2024.
           </p>
@@ -38,9 +38,8 @@ export const AboutPage = () => {
           >
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="text-text-muted">
-              SkyWings Airlines was founded with a vision to make air travel more accessible,
-              comfortable, and sustainable. We believe in connecting people with their dreams
-              and loved ones through safe, reliable, and exceptional air travel experiences.
+              The Moroccan national airline company, founded on June 29, 1957, 
+              and a member of the OneWorld alliance.
             </p>
             <p className="text-text-muted">
               Today, we serve millions of passengers annually, flying to hundreds of

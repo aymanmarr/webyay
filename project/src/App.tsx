@@ -17,7 +17,6 @@ function App() {
     <Router>
       <div className="min-h-screen bg-background text-text">
         <Navbar />
-        
         <Routes>
           <Route path="/" element={<Hero />} />
           <Route path="/login" element={<LoginPage />} />
