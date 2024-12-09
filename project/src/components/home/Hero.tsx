@@ -4,6 +4,7 @@ import { Search } from '../shared/Search';
 import { AboutPage } from '../../pages/About';
 import CustomCards from './CustomCards';
 import BookNowButton from '../shared/BookNowButton';
+
 export const Hero = () => {
   return (
     <div className="relative">
@@ -42,39 +43,37 @@ export const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="absolute w-full max-w-4xl left-1/2 transform -translate-x-1/2 bottom-3"
+            className="absolute w-full max-w-4xl left-1/2 transform -translate-x-1/2 top-[85%] z-10"
           >
             <Search />
           </motion.div>
         </div>
       </div>
       
-    <div className="bg-black/70 py-16 px-8 relative">
-          {/* Title and Paragraph Section */}
+      <div className="bg-black/70 py-16 px-8 relative">
+        {/* Title and Paragraph Section */}
         <div className="absolute left-8 top-1/2 transform -translate-y-1/2 text-left text-gray-800">
-            <h3 className="text-3xl font-semibold mb-4">
-              Explore Our Beautiful Destinations
-            </h3>
-            <p className="text-lg text-gray-300 max-w-md">
-              Discover enchanting places and unforgettable experiences. Let us take you
-              to the most beautiful destinations across the globe, tailored to your
-              dream journey.
-            </p>
+          <h3 className="text-3xl font-semibold mb-4 text-center">
+            Explore Our Beautiful Destinations
+          </h3>
+          <p className="text-lg text-gray-300 max-w-md">
+            Discover enchanting places and unforgettable experiences. Let us take you
+            to the most beautiful destinations across the globe, tailored to your
+            dream journey.
+          </p>
         </div>
-            <BookNowButton/>
-          {/* Custom Cards Section */}
-            <div className="relative">
-              <CustomCards />
-            </div>
-    </div>
+        <BookNowButton />
+        {/* Custom Cards Section */}
+        <div className="relative">
+          <CustomCards />
+        </div>
+      </div>
 
-
-      
       {/* About Section */}
       <div className="bg-black/70 py-8">
         <AboutPage />
       </div>
-      
+
       {/* Custom Cards Section */}
       <div className="bg-black/70 py-16">
         <div className="text-center mb-8">
