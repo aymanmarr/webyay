@@ -61,9 +61,9 @@ const NewsCard: React.FC<NewsCardProps> = ({ image, title, description, date, ur
           <div className="mt-4">
             <a
               href={url}
-              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600 transition-all"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-red-700 rounded-md hover:bg-blue-600 transition-all"
             >
-              <ExternalLink className="w-4 h-4 mr-2" />
+              <ExternalLink className="w-4 h-4 mr-2 " />
               Read More
             </a>
           </div>
