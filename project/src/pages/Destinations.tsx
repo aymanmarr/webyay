@@ -5,30 +5,30 @@ import { MapPin } from 'lucide-react';
 const destinations = [
   {
     id: '1',
-    name: 'Paris',
-    country: 'France',
-    image: 'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&q=80',
+    name: 'Marrakech',
+    country: 'Maroc',
+    image: 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTw7SYjmk-wCFYeBR2Qv-97Zf28B8Km0azhAFfRkYOcIfllrsuoGtFTj2NK8la4NcCGUXbR51yYx1R5TVXu89Z9Vh8XTMQ_HQbLIsPff0Y',
     description: 'Experience the romance and charm of the City of Light.'
   },
   {
     id: '2',
-    name: 'Tokyo',
-    country: 'Japan',
-    image: 'https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&q=80',
+    name: 'Paris',
+    country: 'France',
+    image: 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTw7SYjmk-wCFYeBR2Qv-97Zf28B8Km0azhAFfRkYOcIfllrsuoGtFTj2NK8la4NcCGUXbR51yYx1R5TVXu89Z9Vh8XTMQ_HQbLIsPff0Y',
     description: 'Discover the perfect blend of tradition and innovation.'
   },
   {
     id: '3',
     name: 'New York',
     country: 'United States',
-    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTw7SYjmk-wCFYeBR2Qv-97Zf28B8Km0azhAFfRkYOcIfllrsuoGtFTj2NK8la4NcCGUXbR51yYx1R5TVXu89Z9Vh8XTMQ_HQbLIsPff0Y',
     description: 'The city that never sleeps awaits your arrival.'
   },
   {
     id: '4',
     name: 'New York',
     country: 'United States',
-    image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTw7SYjmk-wCFYeBR2Qv-97Zf28B8Km0azhAFfRkYOcIfllrsuoGtFTj2NK8la4NcCGUXbR51yYx1R5TVXu89Z9Vh8XTMQ_HQbLIsPff0Y',
     description: 'The city that never sleeps awaits your arrival.'
   },
   {

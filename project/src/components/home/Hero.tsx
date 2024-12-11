@@ -4,6 +4,7 @@ import { Search } from '../shared/Search';
 import { AboutPage } from '../../pages/About';
 import CustomCards from './CustomCards';
 import BookNowButton from '../shared/BookNowButton';
+import LatestNews from '../layout/LatestNews';
 
 export const Hero = () => {
   return (
@@ -14,7 +15,7 @@ export const Hero = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage:
-              'url("https://aujourdhui.ma/wp-content/uploads/2024/11/Ram-Royal-Air-Maroc-Boeing-787-9-Dreamliner.jpg?x13840")',
+              'url("https://laquotidienne.ma/uploads/actualites/61bb70eaf4082_rammaroc.jpeg")',
           }}
         >
           <div className="absolute inset-0 bg-black/70" />
@@ -52,12 +53,16 @@ export const Hero = () => {
       
       <div className="bg-black/70 py-16 px-8 relative">
         {/* Title and Paragraph Section */}
-        <div className="absolute left-8 top-1/2 transform -translate-y-1/2 text-left text-gray-800">
-          <h3 className="text-3xl font-semibold mb-4 text-center">
-            Explore Our Beautiful Destinations
-          </h3>
-          <p className="text-lg text-gray-300 max-w-md">
+        <div className="absolute left-1/2 transform -translate-x-1/2 top-[22%] text-center mb-8">
+    <h2 className="text-3xl font-semibold text-white">
+      Explore Our Beautiful Destinations
+    </h2>
+        </div>
+        <div className="absolute left-8 top-[60%] transform -translate-y-1/2 text-left text-gray-800">
+          <p className="text-lg text-gray-300 max-w-md text-justify">
             Discover enchanting places and unforgettable experiences. Let us take you
+            to the most beautiful destinations across the globe, tailored to your
+            dream journey. Discover enchanting places and unforgettable experiences. Let us take you
             to the most beautiful destinations across the globe, tailored to your
             dream journey.
           </p>
@@ -73,15 +78,10 @@ export const Hero = () => {
       <div className="bg-black/70 py-8">
         <AboutPage />
       </div>
+    
+  <LatestNews />
 
-      {/* Custom Cards Section */}
-      <div className="bg-black/70 py-16">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-semibold text-gray-800">
-            Explore Our Beautiful Destinations
-          </h2>
-        </div>
-      </div>
+      
     </div>
   );
 };
