@@ -5,6 +5,8 @@ import { AboutPage } from '../../pages/About';
 import CustomCards from './CustomCards';
 import BookNowButton from '../shared/BookNowButton';
 import LatestNews from '../layout/LatestNews';
+import PartnersLogos from '../layout/PartnersLogos';
+import Videocomp from '../layout/Videocomp';
 
 export const Hero = () => {
   return (
@@ -80,8 +82,9 @@ export const Hero = () => {
       </div>
     
   <LatestNews />
-
-      
+    
+    <PartnersLogos/>
+          <Videocomp/>
     </div>
   );
 };

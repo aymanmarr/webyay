@@ -7,7 +7,7 @@ const destinations = [
     id: '1',
     name: 'Marrakech',
     country: 'Maroc',
-    image: 'https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTw7SYjmk-wCFYeBR2Qv-97Zf28B8Km0azhAFfRkYOcIfllrsuoGtFTj2NK8la4NcCGUXbR51yYx1R5TVXu89Z9Vh8XTMQ_HQbLIsPff0Y',
+    image: 'https://www.naturallymorocco.co.uk/cms/destinations/23_6399d46fb9383s_0.jpg?v=1685633524?20230601163204',
     description: 'Experience the romance and charm of the City of Light.'
   },
   {
