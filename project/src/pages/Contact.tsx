@@ -29,9 +29,9 @@ export const ContactPage = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {[
-            { icon: Phone, title: 'Phone', info: '+1 (555) 123-4567' },
-            { icon: Mail, title: 'Email', info: 'support@skywings.com' },
-            { icon: MapPin, title: 'Address', info: '123 Aviation Way, NY 10001' },
+            { icon: Phone, title: 'Phone', info: '	+212 522 48 97 97' },
+            { icon: Mail, title: 'Email', info: 'Ram_France@royalairmaroc.com' },
+            { icon: MapPin, title: 'Address', info: '38 Avenue de l’Opéra 75002 Paris' },
           ].map((item, index) => (
             <motion.div
               key={index}

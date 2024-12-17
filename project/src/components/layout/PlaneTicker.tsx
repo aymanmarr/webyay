@@ -59,7 +59,7 @@ const PlaneTicker: React.FC = () => {
             }
           }
           .animate-scroll {
-            animation: scroll-left 15s linear infinite;
+            animation: scroll-left 35s linear infinite;
           }
         `}
       </style>
