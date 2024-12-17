@@ -11,7 +11,7 @@ export const AboutPage = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl font-bold mb-4">About Royal Air Maroc</h1>
+          <h1 className="text-4xl font-bold mb-4 text-red-700">About Royal Air Maroc</h1>
           <p className="text-text-muted max-w-2xl mx-auto top-10">
             Your trusted partner in air travel, connecting people and places since 2024.
           </p>
@@ -36,6 +36,7 @@ export const AboutPage = () => {
             transition={{ delay: 0.4 }}
             className="space-y-6"
           >
+            
             <h2 className="text-2xl font-semibold mb-4">Our Story</h2>
             <p className="text-text-muted text-justify">
               The Moroccan national airline company, founded on June 29, 1957,

@@ -1,14 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 
 const logos = [
-  { src: 'https://w7.pngwing.com/pngs/448/271/png-transparent-royal-air-maroc-hd-logo-thumbnail.png', alt: 'Logo 1' },
-  { src: 'https://freelogopng.com/images/all_img/1659783327rolex-logo-png.png', alt: 'Logo 2' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qatar_Airways_Logo.png/1200px-Qatar_Airways_Logo.png', alt: 'Logo 4' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qatar_Airways_Logo.png/1200px-Qatar_Airways_Logo.png', alt: 'Logo 5' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qatar_Airways_Logo.png/1200px-Qatar_Airways_Logo.png', alt: 'Logo 6' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qatar_Airways_Logo.png/1200px-Qatar_Airways_Logo.png', alt: 'Logo 7' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Qatar_Airways_Logo.png/1200px-Qatar_Airways_Logo.png', alt: 'Logo 8' },
-  { src: 'https://www.quarkevents.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FV.45d18ab1.png&w=640&q=75', alt: 'Logo 9' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=160350&t=1713342728796', alt: 'Logo 1' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=2073135&t=1718976876641', alt: 'Logo 2' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=170116&t=1713436066824', alt: 'Logo 4' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=160399&t=1713342822570', alt: 'Logo 5' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=160302&t=1713342677085', alt: 'Logo 6' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=170304&t=1713436119215', alt: 'Logo 7' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=160473&t=1713342914444', alt: 'Logo 8' },
+  { src: 'https://www.royalairmaroc.com/image/journal/article?img_id=160622&t=1713343079724', alt: 'Logo 9' },
   { src: 'https://www.quarkevents.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FV.45d18ab1.png&w=640&q=75', alt: 'Logo 10' },
 ];
 

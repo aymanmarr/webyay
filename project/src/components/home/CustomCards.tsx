@@ -3,6 +3,8 @@ import img1 from "../../Assets/ny.jpg";
 import img2 from "../../Assets/rb.jpg";
 import cnx from "../../Assets/kech.jpg";
 import pool from "../../Assets/paris.jpg";
+import path from "../../Assets/path2.png";
+
 
 // Reusable component for a single custom card
 const CustomCard = ({ iconSrc, className }: { iconSrc: string; className: string }) => (
@@ -24,6 +26,17 @@ const CustomCards = () => {
 
   return (
     <div className="relative h-[500px] mx-auto">
+      {/* Background image with opacity and z-index */}
+      <div className="absolute w-full h-full top-0 left-0 z-0">
+        <img
+          src={path}
+          className="w-full h-full object-cover opacity-10" // Change opacity here (0 to 1)
+          alt="Background Image"
+          style={{ zIndex: 0 }}  // Alternatively, you can directly set z-index here.
+        />
+      </div>
+
+      {/* Cards */}
       {cardsData.map((iconSrc, index) => (
         <CustomCard key={index} iconSrc={iconSrc} className={cardClasses[index]} />
       ))}
