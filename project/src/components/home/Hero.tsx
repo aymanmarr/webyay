@@ -7,11 +7,18 @@ import BookNowButton from '../shared/BookNowButton';
 import LatestNews from '../layout/LatestNews';
 import PartnersLogos from '../layout/PartnersLogos';
 import Videocomp from '../layout/Videocomp';
+import PlaneTicker from '../layout/PlaneTicker';
+
 
 export const Hero = () => {
   return (
     <div className="relative">
+      
       {/* Hero Section */}
+      
+      <div className="bg-transparent flex items-center justify-center h-[130px]">
+      <PlaneTicker />
+    </div>
       <div className="relative h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -22,7 +29,6 @@ export const Hero = () => {
         >
           <div className="absolute inset-0 bg-black/70" />
         </div>
-
         <div className="relative h-full flex flex-col items-center justify-center px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -85,6 +91,8 @@ export const Hero = () => {
     
     <PartnersLogos/>
           <Videocomp/>
+
+          
     </div>
   );
 };
