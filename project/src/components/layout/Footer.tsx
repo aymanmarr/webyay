@@ -60,7 +60,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-text-muted">
-          <p>&copy; {new Date().getFullYear()} SkyWings Airlines. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Royal Air Maroc. All rights reserved.</p>
         </div>
       </div>
     </footer>
