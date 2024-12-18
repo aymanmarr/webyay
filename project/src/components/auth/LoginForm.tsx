@@ -15,17 +15,35 @@ export const LoginForm = () => {
 
   const onSubmit = async (data: any) => {
     try {
-      // Simulated login - replace with actual API call
-      setUser({
-        id: '1',
-        name: 'John Doe',
-        email: data.email,
-        bookings: [],
+      const response = await fetch('http://localhost:8081/api/auth/authenticate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
-      toast.success('Successfully logged in!');
-      navigate('/dashboard');
+
+      if (response.ok) {
+        const user = await response.json(); // Backend response should include the role
+        setUser(user); // Save user to the state
+        toast.success('Successfully logged in!');
+
+        // Redirect based on user role
+        if (user.userType === 'ADMIN') {
+          navigate('/dashboard/admin');
+        } else if (user.userType === 'PASSAGER') {
+          navigate('/dashboard/');
+        } else {
+          toast.error('Unknown role. Please contact support.');
+        }
+      } else if (response.status === 403) {
+        toast.error('Invalid email or password. Please try again.');
+      } else {
+        toast.error('Something went wrong. Please try again.');
+      }
     } catch (error) {
-      toast.error('Login failed. Please try again.');
+      toast.error('Failed to connect to the server. Please try again.');
+      console.error('Error:', error);
     }
   };
 
