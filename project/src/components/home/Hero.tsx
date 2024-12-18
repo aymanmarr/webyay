@@ -16,9 +16,10 @@ export const Hero = () => {
       
       {/* Hero Section */}
       
-      <div className="bg-transparent flex items-center justify-center h-[130px]">
-      <PlaneTicker />
-    </div>
+      <div className="bg-transparent flex items-center justify-center h-[170px] ">  {/* Add margin-top */}
+  <PlaneTicker />
+</div>
+
       <div className="relative h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

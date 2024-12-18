@@ -106,7 +106,7 @@ const NewsCard: React.FC = () => {
                   style={{ width: '230px', height: '80px' }} // Modify dimensions as needed
                 >
                   <Users className="w-6 h-6 mr-2" />
-                  <span className="text-xl font-bold">1M</span>
+                  <span className="text-xl font-bold">1M </span>
                   <span className="text-sm">Passengers Served</span>
                 </div>
               </div>
