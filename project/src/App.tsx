@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/layout/Navbar';
 import { Footer } from './components/layout/Footer';
@@ -10,24 +10,32 @@ import { BookingPage } from './pages/Booking';
 import { DestinationsPage } from './pages/Destinations';
 import { AboutPage } from './pages/About';
 import { ContactPage } from './pages/Contact';
+import AdminPage from './pages/AdminPage'; // Import the new AdminPage
 import { Toaster } from 'react-hot-toast';
 
 function App() {
+  const [activeSection, setActiveSection] = useState('overview');
+
+  // Get the JWT token from localStorage or sessionStorage
+  const token = localStorage.getItem('jwtToken') || sessionStorage.getItem('jwtToken');
+
   return (
     <Router>
       <div className="min-h-screen bg-background text-text">
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/dashboard" element={<DashboardPage />} />
-          <Route path="/flights" element={<FlightsPage />} />
-          <Route path="/booking" element={<BookingPage />} />
-          <Route path="/destinations" element={<DestinationsPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          {/* Non-Admin Pages */}
+          <Route path="/" element={<><Navbar /><Hero /><Footer /></>} />
+          <Route path="/login" element={<><Navbar /><LoginPage /><Footer /></>} />
+          <Route path="/dashboard" element={<><Navbar /><DashboardPage /><Footer /></>} />
+          <Route path="/flights" element={<><Navbar /><FlightsPage /><Footer /></>} />
+          <Route path="/booking" element={<><Navbar /><BookingPage /><Footer /></>} />
+          <Route path="/destinations" element={<><Navbar /><DestinationsPage /><Footer /></>} />
+          <Route path="/about" element={<><Navbar /><AboutPage /><Footer /></>} />
+          <Route path="/contact" element={<><Navbar /><ContactPage /><Footer /></>} />
+
+          {/* Admin Pages */}
+          <Route path="/admin/*" element={<><Navbar /><AdminPage/><Footer /></>} />
         </Routes>
-        <Footer />
         <Toaster position="top-right" />
       </div>
     </Router>
@@ -35,3 +43,4 @@ function App() {
 }
 
 export default App;
+

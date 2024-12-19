@@ -22,17 +22,22 @@ export const LoginForm = () => {
         },
         body: JSON.stringify(data),
       });
-
+  
       if (response.ok) {
-        const user = await response.json(); // Backend response should include the role
+        const user = await response.json(); // Backend response should include the JWT token
+  
+        // Store JWT token in local storage
+        localStorage.setItem('jwtToken', user.token); // Store the JWT token
+  
         setUser(user); // Save user to the state
         toast.success('Successfully logged in!');
-
+  
         // Redirect based on user role
         if (user.userType === 'ADMIN') {
-          navigate('/dashboard/admin');
+          // Redirect to AdminPage after successful login
+          navigate('/admin');
         } else if (user.userType === 'PASSAGER') {
-          navigate('/dashboard/');
+          navigate('/dashboard');
         } else {
           toast.error('Unknown role. Please contact support.');
         }
@@ -46,6 +51,8 @@ export const LoginForm = () => {
       console.error('Error:', error);
     }
   };
+  
+  
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
